@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Catamaran;
+  src: url(fonts/Catamaran/catamaran/Catamaran-Medium.ttf);
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url(fonts/pacifico/Pacifico.ttf);
+}
+
+body {
+  background-color: #f1e9ca;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 320px) {
+  /*** HEADER ***/
+  nav {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    margin-top: 60px;
+    opacity: 0;
+    left: 0;
+    text-align: center;
+    font-family: Catamaran, sans-serif;
+  }
+  .navLink {
+    font-size: 15px;
+    line-height: 40px;
+    z-index: 10;
+    position: relative;
+    text-transform: uppercase;
+    display: block;
+    background: rgba(64,56,39,0.9);
+    color: #f1e9ca;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-top: 1px solid #FFC74F;
+  }
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    left: 12px;
+    width: 75px;
+    margin-top: 4px;
+  }
+  .logo img {
+    width: 75px;
+    height: 53px;
+  }
+  .burger {
+    position: absolute;
+    right: 12px;
+    margin-top: 10px;
+  }
+  .header {
+    height: 60px;
+    width: 100%;
+    background: url(img/navwood.jpg) center no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 700;
+    overflow: hidden;
+  }
+  .headerPin {
+    height: 0;
+    width: 100%;
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .openmenu {
+    overflow: visible;
+  }
+
+
+  /*** SECTION ***/
+  .section {
+    padding: 60px 0 70px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    color: #f1e9ca;
+  }
+  .beer {
+    background-image: url(img/biere.jpg);
+  }
+  .story {
+    background-image: url(img/histoire.jpg);
+  }
+  .news {
+    background-image: url(img/news.jpg);
+  }
+  .about {
+    background-image: url(img/houblon.jpg);
+  }
+
+  h2 {
+    font-size: 60px;
+    font-family: Catamaran, sans-serif;
+    text-align: center;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    text-shadow: 6px 3px 2px rgba(0,0,0,.7);
+  }
+  .bottle {
+    width: 40px;
+    margin: 10px 20px 0 10px;
+    vertical-align: middle;
+  }
+  .uniq-beer {
+    padding-left: 60px;
+  }
+  .title {
+    font-family: Pacifico, sans-serif;
+    font-size: 30px;
+  }
+  .description {
+    font-family: Catamaran, sans-serif;
+    font-size: 25px;
+    margin-right: 15px;
+  }
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .section {
+    background-size: 750px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    display: inline-block;
+    width: 200px;
+    height: 141px;
+  }
+
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
