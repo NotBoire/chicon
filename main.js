@@ -10,3 +10,11 @@ $('.burger img').click(function() {
         : 'header';
     header.attr('class', className);
 });
+
+var $document = $(document),
+    $element = $('.header'),
+    className = 'hasScrolled';
+
+$document.scroll(function() {
+    $element.toggleClass(className, $document.scrollTop() >= 250);
+});

@@ -80,6 +80,7 @@ there.
     position: fixed;
     z-index: 700;
     overflow: hidden;
+    transition: all 0.7s ease;
   }
   .headerPin {
     height: 0;
@@ -196,6 +197,7 @@ there.
   .logo img {
     width: 300px;
     height: 212px;
+    transition: all 0.7s ease;
   }
   .burger {
     display: none;
@@ -240,10 +242,28 @@ there.
     width: 1200px;
     margin: -235px 0 0 -60px;
   }
+  .hasScrolled {
+    transition: all 0.7s ease;
+    height: 50px;
+  }
+  .hasScrolled header .logo {
+    top: -6px;
+  }
+  .hasScrolled header .logo img{
+    transition: all 0.7s ease;
+    width: 75px;
+    height: 53px;
+    margin-top: 5px;
+  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .uniq-beer {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+}
