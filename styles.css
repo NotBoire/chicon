@@ -100,13 +100,13 @@ there.
     color: #f1e9ca;
   }
   .beer {
-    background-image: url(img/biere.jpg);
+    background-image: url(img/news.jpg);
   }
   .story {
     background-image: url(img/histoire.jpg);
   }
   .news {
-    background-image: url(img/news.jpg);
+    background-image: url(img/biere.jpg);
   }
   .about {
     background-image: url(img/houblon.jpg);
@@ -149,12 +149,31 @@ there.
     width: 600px;
     margin: -75px 0 0 -100px;
   }
+  .social {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  .social li {
+    list-style-type: none;
+    float: left;
+    display: inline;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 10px;
+    -webkit-transition: background .1s ease-in;
+  }
+  .social li a {
+    color: black;
+  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .section {
-    background-size: 750px;
+    background-size: 100%;
   }
   .img-inline img {
     width: 850px;
@@ -163,18 +182,64 @@ there.
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 770px) {
   .logo {
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 10;
+    width: 100%;
   }
-
   .logo img {
-    display: inline-block;
-    width: 200px;
-    height: 141px;
+    width: 300px;
+    height: 212px;
   }
-
-
+  .burger {
+    display: none;
+  }
+  .header {
+    overflow: visible;
+    height: 250px;
+  }
+  .navLeft {
+    float: left;
+    text-align: left;
+    padding-left: 60px;
+  }
+  .navRight {
+    float: right;
+    text-align: right;
+    padding-right: 60px;
+  }
+  .navLink {
+    display: inline-block;
+    background: transparent;
+    margin-top: -5px;
+    border-top: none;
+    text-decoration: none;
+    padding: 0 20px;
+  }
+  .headerPin {
+    padding-bottom: 250px;
+  }
+  nav {
+    background: rgba(0,0,0,0.5);
+    height: 60px;
+    bottom: 0;
+    line-height: 60px;
+    opacity: 1 !important;
+  }
+  .section {
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .img-inline img {
+    width: 1200px;
+    margin: -235px 0 0 -60px;
+  }
 }
 
 /* Larger than desktop */
