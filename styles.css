@@ -255,6 +255,21 @@ there.
     height: 53px;
     margin-top: 5px;
   }
+  .uniq-beer p.title-beer, .uniq-beer p.description-beer {
+    display: inline-block;
+    margin: 0;
+  }
+  p.description-beer {
+    max-width: 620px;
+    vertical-align: middle;
+  }
+  p.title-beer {
+    margin-right: 35px !important;
+  }
+  .product {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 /* Larger than desktop */
@@ -265,5 +280,11 @@ there.
   .uniq-beer {
     padding-left: 350px;
     padding-right: 350px;
+  }
+  .uniq-section {
+    padding: 100px 350px 100px 350px;
+  }
+  p.description-beer {
+    max-width: 865px;
   }
 }
