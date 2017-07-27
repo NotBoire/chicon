@@ -5,10 +5,9 @@ $('.burger img').click(function() {
     $(this).attr('src', src);
 
     var header = $('.header');
-    var className = (header.attr('class') === 'header')
-        ? 'header openmenu'
-        : 'header';
-    header.attr('class', className);
+    header.hasClass('openmenu')
+    ? header.removeClass('openmenu')
+    : header.addClass('openmenu');
 });
 
 var $document = $(document),
@@ -20,15 +19,18 @@ $document.scroll(function() {
 });
 
 $(document).ready(function() {
-    $('.navLink').on('click', function() { // Au clic sur un élément
-        var page = $(this).attr('href'); // Page cible
-        var speed = 750; // Durée de l'animation (en ms)
+    $('.navLink').on('click', function() { 
+        var page = $(this).attr('href');
+        var speed = 750;
         var top = 0;
         if (page != '#news') {
             top = $(page).offset().top - 100;
         }
-        $('html, body').animate( { scrollTop: top }, speed ); // Go
+        $('html, body').animate( { scrollTop: top }, speed );
 
+
+        $('.burger img').attr('src', 'img/menu.png');
+        $('.header').removeClass('openmenu')
         return false;
     });
 });
