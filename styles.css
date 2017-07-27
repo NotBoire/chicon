@@ -7,7 +7,9 @@
   font-family: Pacifico;
   src: url(fonts/pacifico/Pacifico.ttf);
 }
-
+html {
+  background-color: #34251E;
+}
 body {
   background-color: #FFFEF6;
 }
@@ -114,12 +116,12 @@ there.
     background-image: url(img/second-section.jpg);
   }
   .about {
-    background-color: #4A2F28;
+    background-color: #34251E;
     padding-top: 10px;
     color: #ba9a56;
   }
   .about a {
-    color: #000;
+    color: #fff;
   }
   
   h2 {
@@ -170,15 +172,14 @@ there.
     list-style-type: none;
     float: left;
     display: inline;
-    height: 30px;
-    width: 30px;
+    width: 75px;
     text-align: center;
     line-height: 28px;
     margin-left: 10px;
     -webkit-transition: background .1s ease-in;
   }
   .social li a {
-    color: black;
+    color: #ba9a56;
   }
 }
 
