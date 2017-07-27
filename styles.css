@@ -26,6 +26,8 @@ there.
 
 /* Larger than mobile */
 @media (min-width: 320px) {
+  .fil2 {fill:#FFFEF6}
+  .fil1 {fill:#ba9a56}
   .hidden {
     display: none;
   }
@@ -118,10 +120,13 @@ there.
   .about {
     background-color: #34251E;
     padding-top: 10px;
+    color: #FFFEF6;
+  }
+  .about .title {
     color: #ba9a56;
   }
   .about a {
-    color: #fff;
+    color: #FFFEF6;
   }
   
   h2 {
@@ -177,9 +182,6 @@ there.
     line-height: 28px;
     margin-left: 10px;
     -webkit-transition: background .1s ease-in;
-  }
-  .social li a {
-    color: #ba9a56;
   }
 }
 
