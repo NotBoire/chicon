@@ -19,7 +19,7 @@ $document.scroll(function() {
 });
 
 $(document).ready(function() {
-    $('.navLink').on('click', function() { 
+    $('.navLink').on('click', function() {
         var page = $(this).attr('href');
         var speed = 750;
         var top = 0;

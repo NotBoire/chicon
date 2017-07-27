@@ -149,7 +149,8 @@ there.
     overflow: hidden;
     width: 80%;
     height: 150px;
-    border: 10px solid #000;
+    border: 6px solid #34251E;
+    box-shadow: 0 0 65px rgba(0,0,0,0.35);
   }
   .img-inline img {
     width: 600px;
