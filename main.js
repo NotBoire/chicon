@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
         $('.burger img').attr('src', 'img/menu.png');
-        $('.header').removeClass('openmenu')
+        $('.header').removeClass('openmenu');
         return false;
     });
 });

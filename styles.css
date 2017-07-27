@@ -114,9 +114,14 @@ there.
     background-image: url(img/second-section.jpg);
   }
   .about {
-    background-image: url(img/fourth-section.jpg);
+    background-color: #4A2F28;
+    padding-top: 10px;
+    color: #ba9a56;
   }
-
+  .about a {
+    color: #000;
+  }
+  
   h2 {
     font-size: 60px;
     font-family: Catamaran, sans-serif;
