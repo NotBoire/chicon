@@ -104,17 +104,17 @@ there.
     background-repeat: no-repeat;
     color: #FFFEF6;
   }
-  .beer {
-    background-image: url(img/news.jpg);
+  .news {
+    background-image: url(img/first-section.jpg);
   }
   .story {
-    background-image: url(img/histoire.jpg);
+    background-image: url(img/third-section.jpg);
   }
-  .news {
-    background-image: url(img/biere.jpg);
+  .beer {
+    background-image: url(img/second-section.jpg);
   }
   .about {
-    background-image: url(img/houblon.jpg);
+    background-image: url(img/fourth-section.jpg);
   }
 
   h2 {
@@ -233,7 +233,7 @@ there.
     padding-right: 70px;
   }
   .navLink {
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
     background: transparent;
     margin-top: -5px;
@@ -261,7 +261,7 @@ there.
   }
   .navLink:hover::before,
   .navLink:hover::after {
-    color: #fff;
+    color: #FFFEF6;
     -webkit-transition: color 0.5s, -webkit-transform 0.5s;
     transition: color 0.5s, transform 0.5s;
   }
@@ -291,7 +291,7 @@ there.
     background: rgba(0,0,0,0.5);
     height: 60px;
     bottom: 0;
-    line-height: 60px;
+    line-height: 70px;
     opacity: 1 !important;
   }
   .section {
