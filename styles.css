@@ -24,6 +24,9 @@ there.
 
 /* Larger than mobile */
 @media (min-width: 320px) {
+  .hidden {
+    display: none;
+  }
   /*** HEADER ***/
   nav {
     position: absolute;
@@ -50,6 +53,49 @@ there.
     letter-spacing: 2px;
     padding-bottom: 5px;
     border-top: 1px solid #FFC74F;
+    transition: color 0s 0.5s;
+  }
+  .navLink:hover {
+    color: transparent;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .navLink::before, .navLink::after {
+    content: attr(data-letters);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFC74F;
+    padding: 0 20px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: color 0.5s, -webkit-transform 0.5s;
+    transition: color 0.5s, transform 0.5s;
+  }
+  .navLink:hover::before,
+  .navLink:hover::after {
+    color: #fff;
+    -webkit-transition: color 0.5s, -webkit-transform 0.5s;
+    transition: color 0.5s, transform 0.5s;
+  }
+  .navLink::before {
+    -webkit-clip-path: polygon(30% 0,100% 0%,100% 100%, 60% 100%);
+    clip-path: polygon(30% 0,100% 0%,100% 100%, 60% 100%);
+  }
+
+  .navLink::after {
+    -webkit-clip-path: polygon(30% 0,0% 0%, 0% 100%, 60% 100%);
+    clip-path: polygon(30% 0,0% 0%, 0% 100%, 60% 100%);
+  }
+
+  .navLink:hover::before {
+    -webkit-transform: translate3d(4px,1px,0);
+    transform: translate3d(4px,1px,0);
+  }
+
+  .navLink:hover::after {
+    -webkit-transform: translate3d(-4px,-1px,0);
+    transform: translate3d(-4px,-1px,0);
   }
   .container {
     max-width: 1250px;
@@ -221,13 +267,14 @@ there.
     padding-right: 70px;
   }
   .navLink {
-    font-weight: bold;
+    font-size: 16px;
     display: inline-block;
     background: transparent;
     margin-top: -5px;
     border-top: none;
     text-decoration: none;
     padding: 0 20px;
+    font-weight: bold;
   }
   .headerPin {
     padding-bottom: 210px;
